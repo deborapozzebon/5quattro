@@ -7,13 +7,3 @@ export const HomeImageStyled = styled.div`
   overflow: hidden;
   z-index: -1;
 `
-
-export const HomeTextStyled = styled.div`
-  margin: 0;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
-  padding-top: 40vh;
-  text-shadow: 1px 1px 1px #3c5c5e;
-  color: white;
-`

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Header from '../../components/header'
-import { HomeImageStyled, HomeTextStyled } from './styled'
+import { HomeImageStyled } from './styled'
 
 const Home: NextPage = () => {
   return (
@@ -15,10 +15,7 @@ const Home: NextPage = () => {
           alt=""
         />
       </HomeImageStyled>
-      <Header />        
-      <HomeTextStyled>
-        <p>OIIIIIIIII</p>
-      </HomeTextStyled>
+      <Header />
     </>
   )
 }
