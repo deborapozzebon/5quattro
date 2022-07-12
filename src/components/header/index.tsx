@@ -20,7 +20,7 @@ const Header = () => {
         <div className="logo">
           <Link href="/#home">
             <a>
-              <Image src="/logo.png" width={150} height={60} />
+              <Image src="/logo.png" width={150} height={60} alt=""/>
             </a>
           </Link>
         </div>

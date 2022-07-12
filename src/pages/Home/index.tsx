@@ -12,6 +12,7 @@ const Home: NextPage = () => {
           layout="fill"
           objectFit="cover"
           quality={100}
+          alt=""
         />
       </HomeImageStyled>
       <Header />        
