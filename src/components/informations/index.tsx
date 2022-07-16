@@ -1,23 +1,51 @@
 import { InformationStyled } from "./styled";
-import Image from 'next/image'
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const Informations = () => {
 
   return (
     <InformationStyled>
       <div className="container">
+        
         <div className="main-information">
           <div className="left">
-            <div className="vertical-line"></div>
+            <motion.div
+              className="vertical-line"
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }} />
           </div>
           <div className="right">
             <div className="top-right">
-              <span className="top-right-text">mobiliário </span>
-              <div className="horizontal-line"></div>
+              <motion.span
+                className="top-right-text"
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}>
+                mobiliário
+              </motion.span>
+              <motion.div
+                className="horizontal-line"
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }} />
             </div>
             <div className="bottom-right">
-              <span className="bottom-right-text-principal">INDUSTRIAL PREMIUM</span>
-              <span className="bottom-right-text">localizada em um dos maiores polos moveleiros do país!</span>
+              <motion.span
+                className="bottom-right-text-principal"
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}>
+                INDUSTRIAL PREMIUM
+              </motion.span>
+              <motion.span
+                className="bottom-right-text"
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8 }}>
+                localizada em um dos maiores polos moveleiros do país!
+              </motion.span>
             </div>
           </div>
         </div>
