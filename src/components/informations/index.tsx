@@ -27,7 +27,7 @@ const Informations = () => {
               </motion.span>
               <motion.div
                 className="horizontal-line"
-                initial={{ x: -20, opacity: 0 }}
+                initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }} />
             </div>
