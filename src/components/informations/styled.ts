@@ -55,7 +55,8 @@ export const InformationStyled = styled.section`
 
   @media(max-width:950px){
     .container .main-information {
-      margin: 0 10px;
+      margin-right: 20px;
+      margin-left: 5px;
     }
   }
 `;
