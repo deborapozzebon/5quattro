@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   return (
-    <HeaderStyled>
+    <HeaderStyled id="main-application">
       <div className="container">
         <div className="logo">
           <Link href="/#home">
@@ -26,17 +26,17 @@ const Header = () => {
         </div>
         <ul className={`menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
-            <Link href="#home">
+            <Link href="#main-application">
               <a onClick={closeMenu}>INÍCIO</a>
             </Link>
           </li>
           <li>
-            <Link href="#home">
+            <Link href="#about">
               <a onClick={closeMenu}>QUEM SOMOS</a>
             </Link>
           </li>
           <li>
-            <Link href="#home">
+            <Link href="#products">
               <a onClick={closeMenu}>PRODUTOS</a>
             </Link>
           </li>

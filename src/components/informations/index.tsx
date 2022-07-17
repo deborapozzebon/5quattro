@@ -1,13 +1,11 @@
 import { InformationStyled } from "./styled";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 
 const Informations = () => {
-
   return (
     <InformationStyled>
       <div className="container">
-        
         <div className="main-information">
           <div className="left">
             <motion.div
